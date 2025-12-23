@@ -15,3 +15,9 @@ list.addEventListener('click', (e) => {
         e.target.classList.toggle('completed');
     }
 });
+
+list.addEventListener('dblclick', (e) => {
+    if (e.target.tagName === 'LI') {
+        e.target.remove();
+    }
+});
