@@ -21,3 +21,7 @@ list.addEventListener('dblclick', (e) => {
         e.target.remove();
     }
 });
+
+document.getElementById('clearBtn').addEventListener('click', () => {
+    list.innerHTML = '';
+});
